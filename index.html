@@ -7,6 +7,7 @@
 <html>
 	<head>
 		<title>Sophie's Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,7 +26,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>iSophes</h1>
-								<p>Full Stack Developer on the Roblox Platform</p>
+								<h2>Full Stack Developer on the Roblox Platform</h2>
 							</div>
 						</div>
 						<nav>
@@ -33,7 +34,6 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Work</a></li>
 								<li><a href="#contact">Contact</a></li>
-								<li><a href="#elements">Elements</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -53,41 +53,109 @@
 
 						<!-- Work -->
 							<article id="work">
+
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/work/workBanner.png" alt="" /></span>
-								<p> </p>
-
 								
+								<p>
+									This section shows all of my work. It has previous projects, current projects and future projects that I would like to attempt!
+									<br />
+									<br />
+									I hope you enjoy looking at my work. I'm really proud of some of it!
+									<br/>
+									<br />
+									Each section contains what the project is, what went well, what didn't and a showcase of it (A game, video, link, etc).
+								</p>
+								<span class="image main"><img src="images/work/prevousbanner.png" alt=""/></span> 
+
+								<p>
+									I have some previous work! I'm quite proud of this and would love to show it!
+									Click on the buttons below to be directed to my past projects!
+								</p>	
+								
+								<nav>
+									<ul>
+										<li><a href="#QuelliterAbilities">Quelliter Abilities System</a></li>
+										<li><a href="#11thFloor">11th Floor</a></li>
+									</ul>
+								</nav>
+
+							</article>
+
+							<article id="11thFloor">
+								<h2 class="major">11th Floor</h2>
+
+								<p>
+
+									11th Floor was a project that I created with three other people for the <a href="https://discord.gg/Sxh9ZfeCzj">VectorThree Game Jam.</a>
+									<br />
+									<br />
+									As of 4th February 2023 (Time of writing), the results have not been announced. I'll try and update it here once they are. But there is information that they are filming games!  
+									<br />
+									<br />
+									11th Floor was created with the theme "Looks can be deceiving"; we originally was going for a non-euclidean game. I had made a couple features for the game, but the project's lead was in burnout and hadn't got anything done for it. So we ended up just putting everything we had made together and hoped for the best.
+
+									<ul>
+										<h3>What went well:</h3>
+										<br />
+										<li>I had learnt how to use Rojo and Github, something that I really appreciate learning; I use it in everything and greatly prefer it over the default Roblox Studio editor.</li>
+										<br />
+										<li>I had learnt great teamwork skills. As the Jam was in groups, I had to use communication skills and teamwork to try and get the game done. I'm happy I did this since it would definitely keep me back if I was working on a studio. </li>
+										<br />
+										<li>I learnt CollectionService. I wanted a way that the player could collect "Objects" around the map to complete tasks. So the thing that came to mind was collectionservice. It allows things to have "tags" and then I can just check if the object has said tag, and then instantly know what to do from one central script instead of having scripts inside of objects; which was a big no-no.</li>
+										<br />
+										<li>I had created a game; something I had wanted to do for a while. It wasn't a good one, but it was a game. It just satisfies me that I could make something that worked like this, with no outside help except from documentation</li>
+									</ul>
+									<ul>
+										<h3>What didn't go well:</h3>
+										<br />
+										<li>We hadn't met what we wanted. Time was really important, and none of us had all of the time that we really needed. The guy that was supposed to make the main feature, had left us.</li>
+										<li>We had totally missed the theme; we should've made multiple features revolve around the theme. To comply with the theme, we had planned a non-euclidean game. But with the lead dev doing nothing like said above, we were left with no option but to miss the ttheme completely.</li>
+									</ul>
+
+									<a href="https://www.roblox.com/games/12143939460/11th-Floor">Here is a link to the game.</a>
+								</p>
+							</article>
+
+							<article id="QuelliterAbilities">
+								<h2 class="major">Quelliter Abilities System</h2>
+							
+								<p> 
+									This system was designed for <a href="https://discord.gg/KYHpEv3gnE"> Roadway Studios' Quelliter </a>
+									<br />
+									The main premise of the system is that you collect an orb and you get an ability. Once the timer on it runs out, you can't use it anymore
+								</p>
+
+								<ul>
+									What went well:
+
+									<br />
+									<br />
+
+									<li> I had learnt a lot about positioning things. I had ran into an issue where I had to get the orbs to be aligned with "tiles"; the game is inspired by the popular <a href="https://minecraft.fandom.com/wiki/Spleef">"Spleef"</a> gamemode on Minecraft. It taught me about how to use Vector3 and CFrame to position things on a scale consistantly. </li>
+									<li> I had learnt how to properly tween elements well and make good-looking animations.</li>
+								</ul>
+							
+								<ul>
+									What didn't go well:
+
+									<br />
+									<br />
+
+									<li> The code was messy. Really messy. Everything was everywhere and not in one spot where I could easily access it. Everything is about learning, and this was something. </li>
+									<li> UI was controlled on the server. Yes, I did the one forbidden practise that nobody should do. I accessed the player's PlayerGui on the server an edited it from there. I believe this was one of the stupidest things to ever do. </li>
+									<li> It wouldn't work on an in-game scenario. Later on, we had ran the system in the actual matchmaking system and it only half-worked. As the code was messy, it was a pain to fix. We have moved the task to a new team member whilst I take time off to learn practises and work on my own things. </li>
+								</ul>
+
+								<a href="https://www.youtube.com/watch?v=eB_mc0tvLOs">Here is a link to a video of the abilities system.</a>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.twitter.com/lSophes" class="icon brands fa-twitter"><span class="label">Follow me on Twitter!</span></a></li>
+									<li><a href="https://www.github.com/isophes" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
